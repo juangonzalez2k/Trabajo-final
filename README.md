@@ -41,13 +41,25 @@ trabajofinal/
 
 ## Cómo ejecutar el proyecto
 
-1. **Clonar el repositorio**: Puedes hacerlo utilizando el comando `git clone https://github.com/juangonzalez2k/Trabajo-final.git`.
+1. **Clonar el repositorio**: Puedes hacerlo utilizando el comando:
 
-2. **Instalar las dependencias del proyecto**: Debes ubicarte en la carpeta del proyecto y ejecutar el comando `npm install`.
+```bash
+git clone https://github.com/juangonzalez2k/Trabajo-final.git.
+```
 
-3. **Verificar la cadena de conexión a la base de datos**: La conexión a la base de datos se maneja en el archivo `app/models/customer.model.js`. Asegúrate de que la cadena de conexión a MongoDB Atlas es correcta.
+3. **Instalar las dependencias del proyecto**: Debes ubicarte en la carpeta del proyecto y ejecutar el comando:
 
-4. **Iniciar el servidor**: Desde la carpeta raíz del proyecto, ejecuta el comando `npm start`. Si todo está configurado correctamente, el servidor debería estar escuchando las solicitudes.
+   ```bash
+   npm install
+   ```
+
+5. **Verificar la cadena de conexión a la base de datos**: La conexión a la base de datos se maneja en el archivo `app/models/customer.model.js`. Asegúrate de que la cadena de conexión a MongoDB Atlas es correcta.
+
+6. **Iniciar el servidor**: Desde la carpeta raíz del proyecto, ejecuta el comando:
+   ```bash
+   npm start
+   ```
+Si todo está configurado correctamente, el servidor debería estar escuchando las solicitudes.
 
 ## Prueba de los Endpoints
 
