@@ -1,27 +1,55 @@
-# API REST con MongoDB - Microservicio Customer
+# Proyecto Final - API Rest con Node.js, Express y MongoDB
 
-## Objetivo de la Tarea
+Este proyecto es una API Rest creada con Node.js y Express para el curso de programación. Esta API interactúa con una base de datos MongoDB para realizar operaciones CRUD en los datos del cliente.
 
-El objetivo principal de esta tarea es implementar un microservicio que gestione operaciones CRUD (Crear, Leer, Actualizar, Eliminar) para la colección "Customer" (Cliente) usando MongoDB como base de datos. El resultado será una API REST funcional que permita a los clientes interactuar con la plataforma y gestionar datos de los clientes en la base de datos.
+## Objetivo del Proyecto
 
-## Endpoints Implementados
+El objetivo de este proyecto es implementar una API Rest para el microservicio "Cliente" de una tienda en línea. Los endpoints permiten obtener, crear, actualizar y eliminar datos del cliente en una base de datos MongoDB.
 
-La API proporcionará los siguientes puntos finales:
+## Tecnologías Utilizadas
 
-- **GET /customers/**: Este endpoint devuelve todos los clientes presentes en la base de datos.
-- **POST /customer/**: Este endpoint permite la creación de un nuevo cliente en la base de datos.
-- **GET /customer/:id**: Este endpoint permite obtener los detalles de un cliente específico usando su ID.
-- **PUT /customer/:id**: Este endpoint permite actualizar los detalles de un cliente específico usando su ID.
-- **DELETE /customer/:id**: Este endpoint permite eliminar un cliente específico de la base de datos usando su ID.
+- Node.js
+- Express
+- MongoDB
+
+## Estructura del Proyecto
+
+El proyecto tiene la siguiente estructura de carpetas y archivos:
+
+trabajofinal/
+├── app/
+│ ├── controllers/
+│ ├── models/
+│ └── routes/
+├── node_modules/
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── README.md
+└── server.js
+
+
+- `app/controllers/`: Esta carpeta contiene los controladores que gestionan las operaciones de la base de datos.
+- `app/models/`: Esta carpeta contiene los esquemas de los modelos de la base de datos.
+- `app/routes/`: Esta carpeta contiene las rutas de la API.
+- `node_modules/`: Esta carpeta contiene las dependencias del proyecto.
+- `.gitignore`: Este archivo le dice a Git qué archivos o directorios no debe rastrear.
+- `package-lock.json` y `package.json`: Estos archivos contienen la información de las dependencias y scripts del proyecto.
+- `README.md`: Este archivo contiene la documentación del proyecto.
+- `server.js`: Este archivo es el punto de entrada del servidor y configura el servidor Express y MongoDB.
 
 ## Cómo ejecutar el proyecto
 
-1. **Requisitos previos**: Asegúrate de tener instalados en tu sistema Node.js, npm y MongoDB. Si estás usando un servicio en la nube como MongoDB Atlas, asegúrate de tener la cadena de conexión.
+1. **Clonar el repositorio**: Puedes hacerlo utilizando el comando `git clone https://github.com/juangonzalez2k/Trabajo-final.git`.
 
-2. **Clonar el proyecto**: Clona el repositorio a tu máquina local utilizando el comando git clone.
+2. **Instalar las dependencias del proyecto**: Debes ubicarte en la carpeta del proyecto y ejecutar el comando `npm install`.
 
-3. **Instalar las dependencias**: Navega hasta el directorio del proyecto en tu terminal y ejecuta el comando `npm install` para instalar todas las dependencias necesarias para el proyecto.
+3. **Verificar la cadena de conexión a la base de datos**: La conexión a la base de datos se maneja en el archivo `app/models/customer.model.js`. Asegúrate de que la cadena de conexión a MongoDB Atlas es correcta.
 
-4. **Configurar el entorno**: Crea un archivo `.env` en el directorio raíz del proyecto. Este archivo debería contener la cadena de conexión a tu base de datos MongoDB. Aquí hay un ejemplo de cómo podría verse:
+4. **Iniciar el servidor**: Desde la carpeta raíz del proyecto, ejecuta el comando `npm start`. Si todo está configurado correctamente, el servidor debería estar escuchando las solicitudes.
 
+## Prueba de los Endpoints
 
+Para probar los endpoints, puedes utilizar Postman. Asegúrate de utilizar la URL correcta (por ejemplo, `http://localhost:3000/`) seguida del endpoint específico que deseas probar (por ejemplo, `/customers/` para obtener todos los clientes).
+
+Recuerda cambiar el método HTTP según el endpoint que estés probando y proporcionar el cuerpo del mensaje en formato JSON para las solicitudes POST y PUT.
