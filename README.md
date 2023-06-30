@@ -14,6 +14,14 @@ La API proporcionará los siguientes puntos finales:
 - **PUT /customer/:id**: Este endpoint permite actualizar los detalles de un cliente específico usando su ID.
 - **DELETE /customer/:id**: Este endpoint permite eliminar un cliente específico de la base de datos usando su ID.
 
-## Documentación
+## Cómo ejecutar el proyecto
 
-Como parte de esta tarea, se proporcionará documentación completa y detallada. Esta documentación explicará cómo utilizar cada endpoint y qué funcionalidad proporciona. Esta documentación es esencial para garantizar que los usuarios futuros de la API tengan un entendimiento claro de su funcionalidad y operación.
+1. **Requisitos previos**: Asegúrate de tener instalados en tu sistema Node.js, npm y MongoDB. Si estás usando un servicio en la nube como MongoDB Atlas, asegúrate de tener la cadena de conexión.
+
+2. **Clonar el proyecto**: Clona el repositorio a tu máquina local utilizando el comando git clone.
+
+3. **Instalar las dependencias**: Navega hasta el directorio del proyecto en tu terminal y ejecuta el comando `npm install` para instalar todas las dependencias necesarias para el proyecto.
+
+4. **Configurar el entorno**: Crea un archivo `.env` en el directorio raíz del proyecto. Este archivo debería contener la cadena de conexión a tu base de datos MongoDB. Aquí hay un ejemplo de cómo podría verse:
+
+
