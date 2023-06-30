@@ -43,9 +43,9 @@ trabajofinal/
 
 1. **Clonar el repositorio**: Puedes hacerlo utilizando el comando:
 
-```bash
-git clone https://github.com/juangonzalez2k/Trabajo-final.git.
-```
+   ```bash
+   git clone https://github.com/juangonzalez2k/Trabajo-final.git.
+   ```
 
 3. **Instalar las dependencias del proyecto**: Debes ubicarte en la carpeta del proyecto y ejecutar el comando:
 
