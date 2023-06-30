@@ -16,18 +16,18 @@ El objetivo de este proyecto es implementar una API Rest para el microservicio "
 
 El proyecto tiene la siguiente estructura de carpetas y archivos:
 
+```plaintext
 trabajofinal/
 ├── app/
-│ ├── controllers/
-│ ├── models/
-│ └── routes/
+│   ├── controllers/
+│   ├── models/
+│   └── routes/
 ├── node_modules/
 ├── .gitignore
 ├── package-lock.json
 ├── package.json
 ├── README.md
 └── server.js
-
 
 - `app/controllers/`: Esta carpeta contiene los controladores que gestionan las operaciones de la base de datos.
 - `app/models/`: Esta carpeta contiene los esquemas de los modelos de la base de datos.
