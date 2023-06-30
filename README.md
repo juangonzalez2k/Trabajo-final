@@ -28,6 +28,7 @@ trabajofinal/
 ├── package.json
 ├── README.md
 └── server.js
+```
 
 - `app/controllers/`: Esta carpeta contiene los controladores que gestionan las operaciones de la base de datos.
 - `app/models/`: Esta carpeta contiene los esquemas de los modelos de la base de datos.
