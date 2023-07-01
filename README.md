@@ -8,9 +8,18 @@ El objetivo de este proyecto es implementar una API Rest para el microservicio "
 
 ## Tecnologías Utilizadas
 
-- Node.js
-- Express
-- MongoDB
+- Node.js Para instalar node con el comando:
+ ```bash
+  https://nodejs.org/en
+  ```
+- Express Para instalar Express es necesario utilizar el comando:
+ ```bash
+   npm install
+  ```
+- MongoDB Para instalar MongoDB es necesario descargarlo del siguiente link:
+```bash
+   https://www.mongodb.com/try/download/compass
+```
 
 ## Estructura del Proyecto
 
@@ -66,3 +75,25 @@ Si todo está configurado correctamente, el servidor debería estar escuchando l
 Para probar los endpoints, puedes utilizar Postman. Asegúrate de utilizar la URL correcta (por ejemplo, `http://localhost:3000/`) seguida del endpoint específico que deseas probar (por ejemplo, `/customers/` para obtener todos los clientes).
 
 Recuerda cambiar el método HTTP según el endpoint que estés probando y proporcionar el cuerpo del mensaje en formato JSON para las solicitudes POST y PUT.
+
+Los endpoints que son requeridos son:
+Get: 
+```bash
+   http://localhost:8080/api/customers
+```
+Post:
+```bash
+   http://localhost:8080/api/customers
+```
+Get:
+```bash
+   http://localhost:8080/api/customers/<id>
+```
+Put:
+```bash
+   http://localhost:8080/api/customers/<id>
+```
+Delete:
+```bash
+   http://localhost:8080/api/customers/<id>
+```
